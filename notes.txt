@@ -1,0 +1,69 @@
+    1  sudo su -
+    2  sudo apt-get update
+    3  sudo apt-get upgrade -y
+     apt install -y wget apt-transport-https
+   54  mkdir -p /etc/apt/keyrings
+   55  wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | tee /etc/apt/keyrings/adoptium.asc
+   56  echo "deb [signed-by=/etc/apt/keyrings/adoptium.asc] https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
+   57  apt update
+
+apt install temurin-8-jdk
+
+   60  java -version
+   61  sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+   62  wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+   63  apt-get update
+   64  apt -y install postgresql-14
+   65  java -version
+   66  which java
+   67  which jdk
+ln -s /usr/lib/jvm/temurin-8-jdk-amd64 /opt/jdk
+
+
+cp apache-tomcat-9.0.75.tar.gz /opt/
+cd /opt
+tar -xzvf apache-tomcat-9.0.75.tar.gz
+cd apache-tomcat-9.0.75/
+ln -s apache-tomcat-9.0.75 tomcat
+
+apt install ttf-mscorefonts-installer
+
+declare -x CATALINA_HOME="/opt/tomcat"
+
+############ Luego de hacer la instalacion, realizar la limpieza propia para generar el template
+## ver opcion cloud init?
+
+ 1  sudo su -
+    2  sudo apt-get update
+    3  sudo apt-get upgrade -y
+     apt install -y wget apt-transport-https
+   54  mkdir -p /etc/apt/keyrings
+   55  wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | tee /etc/apt/keyrings/adoptium.asc
+   56  echo "deb [signed-by=/etc/apt/keyrings/adoptium.asc] https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
+   57  apt update
+
+apt install temurin-8-jdk
+
+   60  java -version
+   61  sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+   62  wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+   63  apt-get update
+   64  apt -y install postgresql-14
+   65  java -version
+   66  which java
+   67  which jdk
+ln -s /usr/lib/jvm/temurin-8-jdk-amd64 /opt/jdk
+
+
+cp apache-tomcat-9.0.75.tar.gz /opt/
+cd /opt
+tar -xzvf apache-tomcat-9.0.75.tar.gz
+cd apache-tomcat-9.0.75/
+ln -s apache-tomcat-9.0.75 tomcat
+
+apt install ttf-mscorefonts-installer
+
+declare -x CATALINA_HOME="/opt/tomcat"
+
+############ Luego de hacer la instalacion, realizar la limpieza propia para generar el template
+## ver opcion cloud init?
