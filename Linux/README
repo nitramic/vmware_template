@@ -1,0 +1,12 @@
+en ppio el template de linux busca lo sig.:
+
+Se hace toda la instalacion del soft
+
+    Dejar aqui detalle
+
+Se realiza algun tipo de sys-unconfig (ahora es un cloud init)
+    
+    Verificar que esto pueda funcionar en cualquier cloud y on-prem
+
+Se usa la API de VMWare?
+

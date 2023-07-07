@@ -1,0 +1,129 @@
+root@zenithapp:~# history
+    1  passwd root
+    2  exit
+    3  cd /opt
+    4  wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.71/bin/apache-tomcat-9.0.71.tar.gz
+    5  wget https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u372-b07/OpenJDK8U-jdk_x64_linux_hotspot_8u372b07.tar.gz
+    6  ls -l
+    7  tar -xzvf apache-tomcat-9.0.71.tar.gz
+    8  tar -xzvf OpenJDK8U-jdk_x64_linux_hotspot_8u372b07.tar.gz
+    9  ls -l
+   10  ln -x apache-tomcat-9.0.71 tomcat
+   11  ln -s apache-tomcat-9.0.71 tomcat
+   12  ln -s jdk8u372-b07 jdk
+   13  ls -l
+   14  rm apache-tomcat-9.0.71.tar.gz
+   15  rm OpenJDK8U-jdk_x64_linux_hotspot_8u372b07.tar.gz
+   16  ls -l
+   17  nano /opt/tomcat/bin/catalina.sh
+   18  nano /opt/tomcat/conf/tomcat-users.xml
+   19  nano /etc/init.d/tomcat
+   20  cd /etc/init.d/
+   21  chmod 755 tomcat
+   22  update-rc.d tomcat defaults
+   23  systemctl enable tomcat
+   24  systemctl start tomcat
+   25  systemctl status tomcat
+   26  cd /opt/
+   27  ls -l
+   28  cd tomcat/webapps/
+   29  ls -l
+   30  systemctl stop tomcat
+   31  rm -r docs
+   32  rm -r examples
+   33  mv ROOT ROOT_orig
+   34  mkdir ROOT
+   35  systemctl start tomcat
+   36  systemctl stop tomcat
+   37  systemctl start tomcat
+   38  htop
+   39  systemctl stop tomcat
+   40  apt install ttf-mscorefonts-installer
+   41  apt install fontconfig
+   42  nano /opt/tomcat/conf/server.xml
+   43  nano /opt/tomcat/conf/catalina.properties
+   44  nano /opt/tomcat/conf/context.xml
+   45  systemctl start tomcat
+   46  systemctl stop tomcat
+   47  ls -l
+   48  mv ROOT ahrw
+   49  mv ROOT_orig ROOT
+   50  systemctl start tomcat
+   51  exit
+   52  systemctl restart tomcat
+   53  nano /opt/tomcat/webapps/manager/META-INF/context.xml
+   54  exit
+   55  cd /opt/tomcat/webapps/ahrw/help/infinity/
+   56  nano ITA/src/project.prjsam
+   57  nano ITA/toc/manifest.js
+   58  nano ENG/src/project.prjsam
+   59  nano ENG/toc/manifest.js
+   60  nano ITA/toc/manifest.js
+   61  nano ENG/src/project.prjsam
+   62  exit
+   63  nano /opt/tomcat/webapps/ahrw/help/
+   64  cd  /opt/tomcat/webapps/ahrw/help/
+   65  ls -l
+   66  cd infinity/
+   67  ls -l
+   68  nano ENG/src/project.prjsam
+   69  nano ITA/src/project.prjsam
+   70  cd /opt/tomcat
+   71  ls -l
+   72  cd webapps/
+   73  ls -l
+   74  nano ahrw/WEB-INF/classes/DBConfig
+   75  df -h
+   76  htop
+   77  ls -l
+   78  df -h
+   79  systemctl restart tomcat
+   80  nano ROOT/WEB-INF/classes/DBConfig
+   81  chmod -R 755 ROOT
+   82  nano ROOT/WEB-INF/classes/DBConfig
+   83  nano ROOT/WEB-INF/cfg/log4j.properties
+   84  timedatectl
+   85  timedatectl set-timezone Europe/Rome
+   86  exit
+   87  nano /opt/tomcat/webapps/ROOT/WEB-INF/cfg/log4j.properties
+   88  DF -H
+   89  df -h
+   90  htop
+   91  nano /opt/tomcat/webapps/ROOT/WEB-INF/cfg/log4j.properties
+   92  exit
+   93  nano /opt/tomcat/webapps/ahrw/WEB-INF/classes/DBConfig
+   94  cd /opt/tomcat
+   95  ls -l
+   96  unzip Erptax.zip
+   97  apt install zip unzip
+   98  unzip Erptax.zip
+   99  cp webapps/ahrw/WEB-INF/classes/DBConfig Erptax/WEB-INF/classes/DBConfig
+  100  cp webapps/ahrw/WEB-INF/cfg/it.zucchetti.infinity.license.xml Erptax/WEB-INF/cfg/
+  101  nano Erptax/WEB-INF/classes/DBConfig
+  102  mv Erptax erptax
+  103  mv erptax /opt/tomcat/webapps/
+  104  cd webapps/
+  105  ls -l
+  106  chmod -R 755 erptax
+  107  nano /opt/tomcat/webapps/ROOT/WEB-INF/cfg/log4j.properties
+  108  cd /home/infoservice/
+  109  unzip -r ZENITH_pack20230704.zip
+  110  unzip ZENITH_pack20230704.zip
+  111  cd ZENITH_pack20230704/
+  112  LS
+  113  ls
+  114  cd AHRW41.MOLAJONI/
+  115  ls
+  116  cd ..
+  117  cp -r AHRW41.MOLAJONI/* /opt/tomcat/webapps/ahrw/
+  118  cd /home/infoservice/
+  119  unzip ZENITH_pack20230705.zip
+  120  cp -r ZENITH_pack20230705/TaylorWS/* /opt/tomcat/webapps/ROOT/
+  121  systemctl restart tomcat
+  122  top
+  123  ls
+  124  exit
+  125  top
+  126  htop
+  127  systemctl tomcat
+  128  systemctl status tomcat
