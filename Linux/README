@@ -1,12 +1,23 @@
 en ppio el template de linux busca lo sig.:
 
-Se hace toda la instalacion del soft
+## Se hace toda la instalacion del soft
 
     Dejar aqui detalle
 
-Se realiza algun tipo de sys-unconfig (ahora es un cloud init)
-    
-    Verificar que esto pueda funcionar en cualquier cloud y on-prem
+## Se realiza algun tipo de sys-unconfig (ahora es un cloud init)
+Verificar que esto pueda funcionar en cualquier cloud y on-prem
+
+https://help.ubuntu.com/community/CloudInit <-- Comenzar por aqui
+https://github.com/canonical/cloud-init/tree/fbcb224bc12495ba200ab107246349d802c5d8e6/doc/examples <-- Repo de Cannonical>
+https://medium.com/@dsykes012/making-a-custom-ubuntu-20-04-lts-focal-fossa-vm-template-that-works-with-cloud-init-2cfffb6783b4
+
+Para ver
+https://www.youtube.com/watch?v=-zL3BdbKyGY
+https://www.youtube.com/watch?v=lhWQBz5oj8o
+https://www.youtube.com/watch?v=MJgIm03Jxdo
+
 
 Se usa la API de VMWare?
 
+## El viejo y querido sys-unconfig
+https://linux.die.net/man/8/sys-unconfig
